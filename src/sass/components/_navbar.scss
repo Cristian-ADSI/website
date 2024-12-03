@@ -16,7 +16,7 @@ header {
 
 
   &__logo {
-    width: 150px;
+    width: 100px;
   }
 
   &__menu {
@@ -44,8 +44,8 @@ header {
     &:hover {
       color: $main-color-lilac;
     }
-  }
-  
+  } 
+
   &__clsMenu {
     display: none;
   }
