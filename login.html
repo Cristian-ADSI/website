@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Paystub</title>
+  <link rel="shortcut icon" href="./src/images/paystub-icon.png">
+  <link rel="stylesheet" href="src/css/login.min.css">
+  <script src="./src/javascript/events.js"></script>
+
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <nav class="navbar">
+        <a href="" class="navbar__link">
+          <img src="./src/images/svg/paystub-logo-blue.svg" alt="PayStub" class="navbar__logo">
+        </a>
+
+        <ul class="navbar__menu">
+
+          <li class="navbar__item navbar__clsMenu">
+            <button class="btn__main btn__main-blank ">
+              <span class="material-symbols-outlined">cancel</span>
+            </button>
+          </li>
+
+          <li class="navbar__item">
+            <a class="navbar__link " href="./index.html">Inicio</a>
+          </li>
+
+          <li class="navbar__item">
+            <a class="navbar__link" href="./about.html">Acerca de</a>
+          </li>
+
+          <li class="navbar__item">
+            <a class="navbar__link" href="./features.html">PayStub</a>
+          </li>
+
+          <li class="navbar__item">
+            <a class="navbar__link active" href="./contact.html">Contacto</a>
+          </li>
+
+          <li class="navbar__item navbar__itemDemo">
+            <button class="btn__main btn__main-blank">
+              <a href="./contact.html" class="navbar__link">Obtener una Demo</a>
+            </button>
+          </li>
+        </ul>
+
+        <button class="btn__main btn__main-lilac navbar__btnDemo">
+          <a href="" class="navbar__link">Obtener una Demo</a>
+        </button>
+
+        <button class="btn__main btn__main-lilac navbar__opnMenu">
+          <span class="material-symbols-outlined">menu</span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <section class="login">
+        <aside class="login__jumbotron">
+          <img class="login__jumbotron__logo" src="./src/images/svg/Logo-withe.svg" alt="logotipo PayStub">
+
+          <div class="login__jumbotron__section">
+            <h2 class="login__jumbotron__text">
+              Solicita tus credenciales para acceder a la Demo de la aplicacion 100% gratis
+            </h2>
+
+            <button class="btn__main btn__main-blank">
+              <a href="./contact.html">
+                Solicitar Credenciales
+                <span class="material-symbols-outlined">
+                  arrow_forward
+                </span>
+              </a>
+            </button>
+
+          </div>
+        </aside>
+
+        <aside class="login__singIn">
+
+          <h1 class="login__title">Bienvenido De Nuevo!</h1>
+          <p class="login__text">Por favor digita tus credenciales para ingresar</p>
+
+          <form action="" class="login__form" autocomplete="off">
+
+            <label class="app__label" for="user">
+              Usuario
+              <input class="app__input" type="text" name="user" id="user" placeholder="DNI - jhondoe@email.com"
+                required>
+            </label>
+
+            <label class="app__label" for="password">
+              Contraseña
+              <input class="app__input" type="password" name="password" id="password" placeholder="Contraseña">
+            </label>
+
+            <div class="login__disclaimer">
+              <a class="login__reset" href="#">Olvidaste tu contraseña?</a>
+            </div>
+
+            <button class="btn__main btn__main-lilac" type="button">
+              Acceder
+            </button>
+          </form>
+        </aside>
+      </section>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <img class="footer__img" src="./src/images/svg/Logo-withe.svg" alt="PayStub">
+      <ul class="footer__menu">
+        <li class="footer__itemTittle">Mapa del sitio</li>
+        <li class="footer__item"><a href="./index.html">Inicio</a> </li>
+        <li class="footer__item"><a href="./about.html">Acerca de</a> </li>
+        <li class="footer__item"><a href="./features.html">PayStub</a></li>
+        <li class="footer__item"><a href="./contact.html">Contacto</a> </li>
+      </ul>
+    </div>
+  </footer>
+</body>
+
+</html>

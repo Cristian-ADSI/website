@@ -1,0 +1,35 @@
+@mixin media-max-1200() {
+  @media only screen and (max-width: 1200.99px) {
+    @content
+  } 
+}; 
+
+@mixin media-max-920() {
+  @media only screen and (max-width: 920.99px) {
+    @content
+  }
+};
+
+@mixin media-max-768() {
+  @media only screen and (max-width: 768.99px) {
+    @content
+  }
+};
+
+@mixin media-max-640() {
+  @media only screen and (max-width: 640.99px) {
+    @content
+  }
+}; 
+
+@mixin media-max-480() {
+  @media only screen and (max-width: 480.99px) {
+    @content
+  }
+};
+
+@mixin media-max-360() {
+  @media only screen and (max-width: 360.99px) { 
+    @content
+  }
+} 

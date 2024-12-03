@@ -1,0 +1,40 @@
+.footer {
+  &>.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+  }
+
+  background-color: $text-dark;
+  padding: 50px 0;
+
+  &__img {
+    width: 200px;
+  }
+
+  &__itemTittle {
+    color: $white;
+    font-size: 26px;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+
+  &__item {
+    margin-bottom: 20px;
+
+    a {
+      color: $white;
+
+    }
+  }
+}
+
+@include media-max-480() {
+  .footer {
+    &>.container {
+      flex-direction: column;
+      gap: 100px;
+    }
+  }
+}

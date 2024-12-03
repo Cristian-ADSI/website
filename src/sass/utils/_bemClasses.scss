@@ -1,0 +1,140 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+  padding: 0;
+
+  font-family: "Poppins", sans-serif;
+}
+
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  width: 1300px;
+  margin: 0 auto;
+}
+
+.app__label {
+  display: flex;
+  flex-direction: column;
+
+  margin-bottom: 30px;
+  font-weight: 600;
+  width: 100%;
+}
+
+.app__input {
+  background-color: $body-bg-lght;
+  border: solid 1px transparent;
+  border-radius: 10px;
+  height: 50px;
+  margin-top: 5px;
+  outline: none;
+  padding: 5px 10px;
+  width: 100%;
+
+  &::placeholder {
+    font-size: 16px;
+    opacity: .7;
+  }
+}
+
+.app__textarea {
+  background-color: $body-bg-lght;
+  border: solid 1px transparent;
+  border-radius: 10px;
+  height: 50px;
+  margin-top: 5px;
+  outline: none;
+  padding: 5px 10px;
+  width: 100%;
+}
+
+.btn__main {
+  border: none;
+  border-radius: 8px;
+  color: $white;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 300;
+  outline: none;
+  padding: 10px 20px;
+  transition: background-color .2s ease;
+
+  &>a {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  &-lilac {
+    color: $text-white;
+    background-color: $main-color-lilac;
+
+    &:hover {
+      background-color: $main-color-lilac-hov;
+
+    }
+
+    &>a {
+      color: $text-white !important;
+    }
+  }
+
+  &-blank {
+    background-color: transparent;
+
+    &>a {
+      color: $main-color-lilac;
+      font-size: 20px;
+      font-weight: 600;
+      transition: all ease .2s;
+    }
+
+    &:hover a {
+      transform: translateX(15px);
+    }
+  }
+}
+
+.hl__lilac {
+  color: $main-color-lilac;
+}
+
+.hl__aqua {
+  color: $main-color-aqua;
+}
+
+.section__title {
+  color: $text-dark-lgh;
+  font-size: 35px;
+
+  &-white {
+    color: $white;
+
+  }
+}
+
+.section__subtitle {
+  color: $text-dark-lgh;
+  font-size: 28px;
+  margin-bottom: 30px;
+}
+
+
+@include media-max-1200() {
+  .container {
+    padding: 0 20px;
+    width: 100%;
+  }
+}

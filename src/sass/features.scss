@@ -1,0 +1,172 @@
+@import "./utils/mediaQueries";
+@import "./utils/variables";
+@import "./utils/bemClasses";
+
+@import "./components/navbar";
+@import "./components/footer";
+
+
+.features {
+  padding-bottom: 150px;
+
+  margin-top: 100px;
+
+  &__banner {
+    background-color: $main-color-lilac;
+    border-radius: 40px;
+    margin-bottom: 150px;
+    padding: 50px;
+  }
+
+  &__tittle {
+    color: $white;
+    font-weight: 800;
+    font-size: 55px;
+    margin-bottom: 50px;
+    text-align: center;
+  }
+
+  &__text {
+    color: $white;
+    font-size: 18px;
+    line-height: 28px;
+    text-align: center;
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  .btn__main {
+
+    display: block;
+    margin: 50px auto 30px auto;
+
+    a {
+      color: $white;
+    }
+  }
+
+  &__module {
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+    margin-bottom: 50px;
+  }
+
+  &__info {
+    border-radius: 40px;
+    padding: 30px;
+    width: 45%;
+    transform: translateY(-50px);
+
+    p {
+      color: $text-dark-lgh;
+      font-size: 18px;
+      line-height: 28px;
+      margin-bottom: 30px;
+    }
+
+    .features__menu {
+      padding-left: 100px;
+    }
+
+    .features__item {
+      display: flex;
+      gap: 10px;
+      align-items: flex-start;
+
+      color: $text-dark-lgh;
+      font-weight: 500;
+      font-size: 18px;
+      margin-bottom: 20px;
+
+      .material-symbols-outlined {
+        color: $main-color-lilac;
+        font-weight: bold;
+      }
+    }
+  }
+
+  &__info-yellow {
+    background-color: $bg-yellow-lgh;
+    transform: translateY(50px);
+  }
+
+  &__info-gray {
+    background-color: $bg-gray-lgh;
+  }
+
+  &__info-displace {
+    transform: translateY(100px);
+  }
+}
+
+@include media-max-920() {
+  .features {
+    &__tittle {
+
+      font-size: 35px;
+
+    }
+
+
+    &__module {
+      flex-direction: column;
+      gap: 0%;
+
+    }
+
+    &__info {
+
+      width: 100%;
+      transform: translateY(-50px);
+
+      p {
+        color: $text-dark-lgh;
+      }
+
+      .features__menu {
+        padding-left: 30px;
+      }
+    }
+
+
+  }
+}
+
+@include media-max-640() {
+  .features {
+    &__tittle {
+      font-size: 45px;
+    }
+
+    &__text {
+      width: 100%;
+    }
+  }
+}
+
+@include media-max-480() {
+  .features {
+
+    &__banner {
+      padding: 30px; 
+    }
+    &__tittle {
+      font-size: 45px;
+      margin-bottom: 30px;
+    }
+    &__text {
+      font-size: 16px;
+      line-height: 25px;
+      margin: 0 ;
+    }
+  }
+}
+
+@include media-max-360() {
+  .features {
+    &__tittle {
+      font-size: 30px;
+    }
+  }
+}
